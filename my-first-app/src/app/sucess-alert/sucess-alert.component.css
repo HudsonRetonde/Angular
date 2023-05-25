@@ -1,0 +1,9 @@
+p {
+  padding: 20px;
+  background-color: paleturquoise;
+  border: 1px solid darkgreen;
+  width: 50%;
+  height: 5vh;
+  text-align: center;
+  color: darkorange;
+}
