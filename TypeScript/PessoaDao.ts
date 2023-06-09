@@ -1,0 +1,31 @@
+import {DaoInterface} from './DaoInterface'
+import Pessoa from './Concessionaria'
+
+export class PessoaDao implements DaoInterface{
+    nomeTabela: string = 'tb_pessoa'
+
+    inserir(objetc:Pessoa): boolean {
+        console.log('lógica de insert')
+        return true
+    }
+
+    atualizar(object: Pessoa): boolean {
+        console.log('lógica update')
+        return true
+    }
+
+    remover(id: number): Pessoa {
+        console.log('lógica delete')
+        return new Pessoa('', []);
+    }
+
+    slecionar(id:number): Pessoa {
+        console.log('lógica select')
+        return new Pessoa('', []);
+    }
+
+    selecionarTodos(): [any] {
+        console.log('lógica getAll')
+        return [new Pessoa('',[])]
+    }
+}
