@@ -3,11 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PessoaDao = void 0;
+exports.ConcessionariaDao = void 0;
 const Concessionaria_1 = __importDefault(require("./Concessionaria"));
-class PessoaDao {
+class ConcessionariaDao {
     constructor() {
-        this.nomeTabela = 'tb_pessoa';
+        this.nomeTabela = 'tb_concessionaria';
     }
     inserir(objetc) {
         console.log('lógica de insert');
@@ -30,4 +30,4 @@ class PessoaDao {
         return [new Concessionaria_1.default('', [])];
     }
 }
-exports.PessoaDao = PessoaDao;
+exports.ConcessionariaDao = ConcessionariaDao;

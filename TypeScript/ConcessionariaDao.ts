@@ -1,7 +1,8 @@
 import {DaoInterface} from './DaoInterface'
 import Concessionaria from './Concessionaria'
+import { Dao } from './Dao'
 
-export class ConcessionariaDao implements DaoInterface{
+export class ConcessionariaDao {
     nomeTabela: string = 'tb_concessionaria'
 
     inserir(objetc:Concessionaria): boolean {
