@@ -1,6 +1,6 @@
-import { Concessionaria } from './Concessionaria';
-import { Pessoa } from './Pessoa';
-import { Carro } from "./Carro";
+import Concessionaria from './Concessionaria';
+import Pessoa from './Pessoa';
+import Carro from "./Carro";
 
 // let pessoa = new Pessoa("Juvenal", "Fusca")
 // console.log("O cliente se chama " + pessoa.dizerNome() + " e o seu carro prederifo é o " + pessoa.dizerCarroPreferido() + 

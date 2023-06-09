@@ -1,5 +1,5 @@
-import { Carro } from "./Carro";
-export class Pessoa {
+import  Carro  from "./Carro";
+export default class Pessoa {
     private nome:string =''
     private carroPreferido: string =''
     private carro: Carro = new Carro('', 0, 0);

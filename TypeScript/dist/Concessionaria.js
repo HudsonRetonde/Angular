@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Concessionaria = void 0;
 class Concessionaria {
     fornecerEndereco() {
         return this.endereco;
@@ -14,4 +13,4 @@ class Concessionaria {
         this.listaDeCarros = listaDeCarros;
     }
 }
-exports.Concessionaria = Concessionaria;
+exports.default = Concessionaria;
