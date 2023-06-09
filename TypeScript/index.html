@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Animação SVG</title>
+  <style>
+    svg {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+    <div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="40" fill="gray" stroke="black" stroke-width="2"></circle>
+        <circle cx="50" cy="50" r="35" fill="white"></circle>
+        <circle cx="50" cy="50" r="5" fill="black"></circle>
+      
+        <!-- Aros -->
+        <g transform="translate(50, 50)">
+          <g>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(30)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(60)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(90)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(120)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(150)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(180)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(210)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(240)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(270)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(300)"></line>
+            <line x1="0" y1="-40" x2="0" y2="40" stroke="black" stroke-width="2" transform="rotate(330)"></line>
+          </g>
+        </g>
+      
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"></animateTransform>
+      </svg>
+      <div id="loadingText">Aguarde enquanto verificamos as credenciais</div>
+    </div>      
+    <script>
+        const loadingText = document.getElementById("loadingText");
+        const dots = ["", ".", "..", "..."];
+        let dotIndex = 0;
+      
+        function animateDots() {
+          loadingText.textContent = "Aguarde enquanto verificamos as credenciais" + dots[dotIndex];
+          dotIndex = (dotIndex + 1) % dots.length;
+        }
+      
+        setInterval(animateDots, 500);
+      </script>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</body>
+</html>
