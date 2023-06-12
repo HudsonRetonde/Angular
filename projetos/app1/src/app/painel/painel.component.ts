@@ -30,11 +30,11 @@ export class PainelComponent {
   public verificarResposta():void{
   if(this.rodadaFrase.frasePtBr == this.resposta){
     alert('A tradução está correta!!')
-    this.rodada++
+    //this.rodada++
     this.progresso = this.progresso + (100 / this.frases.length)
   } else {
     alert('A tradução está equivocada.')
-    this.rodada++
+    //this.rodada++
   }
 
     // trocar pergunta da rodada
