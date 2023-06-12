@@ -14,7 +14,7 @@ export class PainelComponent {
   public resposta: string = ''
 
   public rodada: number = 0
-  public rodadaFrase: Frase 
+  public rodadaFrase: Frase
 
   constructor(){
     this.rodadaFrase = this.frases[this.rodada]
@@ -26,6 +26,16 @@ export class PainelComponent {
     //console.log(this.resposta)
   }
   public verificarResposta():void{
-    console.log('Verifica resposta: ', this.resposta)
+  if(this.rodadaFrase.frasePtBr == this.resposta){
+    alert('A tradução está correta!!')
+  } else {
+    alert('A tradução está equivocada.')
+  }
+
+    // trocar pergunta da rodada
+    this.rodada++
+    console.log(this.rodada)
+    this.rodadaFrase = this.frases[this.rodada]
+    console.log(this.rodadaFrase)
   }
 }
